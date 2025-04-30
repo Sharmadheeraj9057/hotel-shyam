@@ -1,0 +1,194 @@
+/* Base Styles */
+.home-container {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4') center/cover;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.hero-content {
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: #ffd700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.cta-button {
+  background: #e63946;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.cta-button:hover {
+  background: #c1121f;
+  transform: translateY(-3px);
+}
+
+.secondary-button {
+  background: transparent;
+  color: white;
+  padding: 12px 30px;
+  border: 2px solid white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.secondary-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-3px);
+}
+
+/* Special Offers */
+.special-offers {
+  padding: 4rem 5%;
+  background: #fff9f2;
+  text-align: center;
+}
+
+.special-offers h2 {
+  color: #e63946;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.offer-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.offer-card {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  width: 280px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.offer-card:hover {
+  transform: translateY(-10px);
+}
+
+.offer-card.highlight {
+  border: 2px solid #e63946;
+  position: relative;
+}
+
+.offer-card h3 {
+  color: #e63946;
+  margin-top: 0;
+}
+
+.offer-card p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.offer-card span {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Testimonials */
+.testimonials {
+  padding: 4rem 5%;
+  text-align: center;
+}
+
+.testimonials h2 {
+  color: #e63946;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.testimonial-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.testimonial-card {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.testimonial-card p {
+  font-style: italic;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.customer {
+  font-weight: bold;
+  color: #e63946;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .offer-cards, .testimonial-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .offer-card, .testimonial-card {
+    width: 100%;
+    max-width: 350px;
+  }
+}

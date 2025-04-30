@@ -1,0 +1,81 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff9f2;
+}
+
+.App {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff9f2;
+  padding: 2rem;
+  animation: fadeIn 0.8s ease-in;
+}
+
+h1 {
+  color: #e63946;
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+p {
+  color: #444;
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-button {
+  background: linear-gradient(135deg, #e63946, #ff6b6b);
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cta-button:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding-bottom: 2rem; /* Footer ke liye space */
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* App.css ya relevant CSS file me */
+.main-content {
+  padding-top: 90px; /* header ki height + thoda buffer */
+}
